@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
         <script src="script.js"></script>
         <title>KWH-website</title>
     </head>
@@ -14,19 +15,19 @@
                 <div class="navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#aboutme" class="nav-link">ABOUT ME</a>
+                            <a href="#aboutme" class="nav-link" id="aboutmeNav">ABOUT ME</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#skills" class="nav-link">SKILLS</a>
+                            <a href="#skills" class="nav-link" id="skillsNav">SKILLS</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#log" class="nav-link">LOG</a>
+                            <a href="#log" class="nav-link" id="logNav">LOG</a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
-        <div class="aboutme-wrapper">
+        <div id="aboutme-wrapper" class="wrapper">
             <div class="aboutme-section">
                 <div class="aboutme">
                     <div class="img">
@@ -41,6 +42,12 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div id="skills-wrapper" class="wrapper">
+
+        </div>
+        <div id="log-wrapper" class="wrapper">
+
         </div>
     </body>
 </html>
