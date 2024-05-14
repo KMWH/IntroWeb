@@ -32,10 +32,11 @@ body {
     height: 40px;
     margin-left: auto;
     margin-right: auto;
+    align-items: center;
 }
 
 .navbar-brand {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -83,9 +84,21 @@ body {
 
 .description {
     margin: 0;
-    padding: 0 1rem;
+    padding: 0 1.5rem;
 }
 
-h2 {
+.h2-title {
     color: rgb(0, 98, 179);
+    margin-top: 0.5rem;
+}
+
+p {
+    line-height: 6px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+img {
+    border: 0.5px solid black;
+    border-radius: 3px;
 }
