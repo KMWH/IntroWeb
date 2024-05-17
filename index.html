@@ -4,50 +4,59 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
-        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"
+        ></script>
         <script src="script.js"></script>
         <title>KWH-website</title>
     </head>
     <body>
-        <header class="navbar flex-column">
+        <header class="navbar">
             <nav class="container">
                 <a href class="navbar-brand">KWH</a>
                 <div class="navbar-collapse">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#aboutme" class="nav-link" id="aboutmeNav">ABOUT ME</a>
+                            <a href="#aboutme" class="nav-link" id="aboutmeNav">
+                                ABOUT ME
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#skills" class="nav-link" id="skillsNav">SKILLS</a>
+                            <a href="#skills" class="nav-link" id="skillsNav">
+                                SKILLS
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#log" class="nav-link" id="logNav">LOG</a>
+                            <a href="#log" class="nav-link" id="logNav">
+                                LOG
+                            </a>
                         </li>
                     </ul>
                 </div>
             </nav>
         </header>
         <div id="aboutme-wrapper" class="wrapper">
-            <div class="aboutme-section">
-                <div class="aboutme">
+            <div class="aboutme">
+                <div class="left">
                     <div class="img">
-                        <img src="./image/sample.jpg" width="100%" />
+                        <img src="./image/sample.jpg" />
                     </div>
+                </div>
+                <div class="right">
                     <div class="description">
-                        <h2 class="h2-title">ABOUT ME</h2>
-                        <p>
-                            안녕하세요. 개발자 김원호입니다.<br />
-                            강원대학교에서 컴퓨터공학을 전공하고 있습니다.
+                        <h3 class="h3-title">WONHO KIM</h3>
+                        <h3 class="h3-body">Developer</h3>
+                        <hr style="color: gray" />
+                        <p class="text">
+                            <br />Hello, I'm Developer Wonho Kim!
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="skills-wrapper" class="wrapper">
-
-        </div>
-        <div id="log-wrapper" class="wrapper">
-
-        </div>
+        <div id="skills-wrapper" class="wrapper"></div>
+        <div id="log-wrapper" class="wrapper"></div>
     </body>
 </html>
