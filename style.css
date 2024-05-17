@@ -11,9 +11,25 @@ body {
 
 a {
     text-decoration: none;
-    font-size: 17px;
-    color: rgb(207, 207, 207);
+}
+
+.navbar a {
+    color: white;
     font-weight: 1000;
+}
+
+.navbar-nav a {
+    font-size: 17px;
+    color: rgb(175, 175, 175);
+    font-weight: 1000;
+}
+
+.navbar-nav a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.navbar-nav a:active {
+    color: rgb(255, 255, 255);
 }
 
 li {
@@ -83,13 +99,17 @@ img {
 .h3-title {
     font-size: 32px;
     font-weight: bold;
-    color: rgb(204, 117, 255);
+    /* color: rgb(204, 117, 255); */
 }
 
 .h3-body {
     font-weight: 400;
     color: rgb(199, 199, 199);
     margin-bottom: 25px;
+}
+
+.text {
+    color: rgb(175, 175, 175);
 }
 
 #skills-wrapper {
