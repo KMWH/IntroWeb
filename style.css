@@ -13,6 +13,23 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: black;
+    z-index: 100;
+}
+
 .navbar a {
     color: white;
     font-weight: 1000;
@@ -28,22 +45,8 @@ a {
     color: rgb(255, 255, 255);
 }
 
-.navbar-nav a:active {
-    color: rgb(255, 255, 255);
-}
-
-li {
-    list-style: none;
-}
-
-img {
-    width: 315px;
-    height: 315px;
-    border-radius: 10px;
-}
-
-.navbar {
-    padding: 1.5rem 2rem;
+.nav-link.active {
+    color: white;
 }
 
 .container {
@@ -52,7 +55,7 @@ img {
 
 .navbar-brand {
     font-size: 23px;
-    padding-left: 1rem;
+    padding-left: 2rem;
 }
 
 .navbar-collapse {
@@ -67,10 +70,10 @@ img {
 }
 
 .nav-link {
-    padding: 0 1.5rem;
+    margin-right: 3rem;
 }
 
-.wrapper {
+#aboutme-wrapper {
     display: flex;
     position: fixed;
     width: 900px;
@@ -81,7 +84,7 @@ img {
     align-items: center;
 }
 
-.aboutme {
+.aboutme, .skills, .log {
     display: flex;
     width: 100%;
     height: auto;
@@ -89,6 +92,11 @@ img {
 
 .aboutme .left {
     width: 35%;
+}
+
+.img {
+    width: 315px;
+    height: 315px;
 }
 
 .aboutme .right {
@@ -99,7 +107,6 @@ img {
 .h3-title {
     font-size: 32px;
     font-weight: bold;
-    /* color: rgb(204, 117, 255); */
 }
 
 .h3-body {
@@ -112,12 +119,51 @@ img {
     color: rgb(175, 175, 175);
 }
 
-#skills-wrapper {
-    display: none;
-}
-#log-wrapper {
-    display: none;
+@media (min-width: 1024px) {
+    #aboutme-wrapper {
+        display: flex;
+        position: fixed;
+        width: 900px;
+        height: 500px;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        align-items: center;
+    }
 }
 
-@media (max-width: 1040px) {
+@media (max-width: 1024px) {
+    .img {
+        width: 250px;
+        height: 250px;
+        margin: 0 auto;
+    }
+
+    #aboutme-wrapper {
+        position: relative;
+        width: auto;
+        height: auto;
+        top: 0;
+        left: 0;
+        transform: none;
+        padding: 8rem 3rem;
+    }
+
+    .aboutme, .skills, .log {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .aboutme .left {
+        width: auto;
+    }
+
+    .aboutme .right {
+        width: auto;
+        margin-top: 4rem;
+        padding-left: 0;
+        text-align: center;
+    }
 }
