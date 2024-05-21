@@ -135,6 +135,21 @@ li {
     width: 30%;
 }
 
+.h3-log {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.log {
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.log div {
+    margin: 50px 0;
+}
+
 @media (max-width: 1024px) {
     .img {
         width: 250px;
