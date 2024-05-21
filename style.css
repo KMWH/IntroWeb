@@ -17,16 +17,6 @@ li {
     list-style: none;
 }
 
-#aboutme_wrapper img {
-    width: 100%;
-    border-radius: 15px;
-}
-
-#skills-wrapper img {
-    width: 55px;
-    margin: 5px auto;
-}
-
 .navbar {
     position: fixed;
     width: 100%;
@@ -89,6 +79,11 @@ li {
     align-items: center;
 }
 
+#aboutme_wrapper img {
+    width: 100%;
+    border-radius: 15px;
+}
+
 .aboutme, .skills, .log {
     display: flex;
     width: 100%;
@@ -124,6 +119,11 @@ li {
     color: rgb(175, 175, 175);
 }
 
+#skills-wrapper img {
+    width: 55px;
+    margin: 5px auto;
+}
+
 .frontend, .backend, .tool {
     display: flex;
     flex-direction: column;
@@ -133,6 +133,10 @@ li {
 
 .tool {
     width: 30%;
+}
+
+#log-wrapper img {
+    width: 55px;
 }
 
 .h3-log {
