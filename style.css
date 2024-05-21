@@ -17,9 +17,14 @@ li {
     list-style: none;
 }
 
-img {
+#aboutme_wrapper img {
     width: 100%;
     border-radius: 15px;
+}
+
+#skills-wrapper img {
+    width: 55px;
+    margin: 5px auto;
 }
 
 .navbar {
@@ -73,7 +78,7 @@ img {
     margin-right: 3rem;
 }
 
-#aboutme-wrapper {
+.wrapper {
     display: flex;
     position: fixed;
     width: 900px;
@@ -119,17 +124,15 @@ img {
     color: rgb(175, 175, 175);
 }
 
-@media (min-width: 1024px) {
-    #aboutme-wrapper {
-        display: flex;
-        position: fixed;
-        width: 900px;
-        height: 500px;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        align-items: center;
-    }
+.frontend, .backend, .tool {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    text-align: center;
+}
+
+.tool {
+    width: 30%;
 }
 
 @media (max-width: 1024px) {
@@ -139,7 +142,7 @@ img {
         margin: 0 auto;
     }
 
-    #aboutme-wrapper {
+    .wrapper {
         position: relative;
         width: auto;
         height: auto;
@@ -156,7 +159,7 @@ img {
         margin: 0 auto;
     }
 
-    .aboutme .left {
+    .left {
         width: auto;
     }
 
@@ -165,5 +168,10 @@ img {
         margin-top: 4rem;
         padding-left: 0;
         text-align: center;
+    }
+
+    .frontend, .backend, .tool {
+        width: auto;
+        margin-bottom: 30px;
     }
 }
