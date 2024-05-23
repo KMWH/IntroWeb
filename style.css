@@ -84,7 +84,9 @@ li {
     border-radius: 15px;
 }
 
-.aboutme, .skills, .log {
+.aboutme,
+.skills,
+.log {
     display: flex;
     width: 100%;
     height: auto;
@@ -119,12 +121,18 @@ li {
     color: rgb(175, 175, 175);
 }
 
+#skills-wrapper {
+    display: none;
+}
+
 #skills-wrapper img {
     width: 55px;
     margin: 5px auto;
 }
 
-.frontend, .backend, .tool {
+.frontend,
+.backend,
+.tool {
     display: flex;
     flex-direction: column;
     width: 35%;
@@ -133,6 +141,10 @@ li {
 
 .tool {
     width: 30%;
+}
+
+#log-wrapper {
+    display: none;
 }
 
 #log-wrapper img {
@@ -154,6 +166,12 @@ li {
     margin: 50px 0;
 }
 
+@media (min-width: 1024px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
 @media (max-width: 1024px) {
     .img {
         width: 250px;
@@ -171,7 +189,9 @@ li {
         padding: 8rem 3rem;
     }
 
-    .aboutme, .skills, .log {
+    .aboutme,
+    .skills,
+    .log {
         display: block;
         width: auto;
         height: auto;
@@ -189,7 +209,9 @@ li {
         text-align: center;
     }
 
-    .frontend, .backend, .tool {
+    .frontend,
+    .backend,
+    .tool {
         width: auto;
         margin-bottom: 30px;
     }
