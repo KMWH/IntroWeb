@@ -86,7 +86,7 @@ li {
     height: auto;
 }
 
-.aboutme .left {
+.left {
     width: 35%;
 }
 
@@ -100,7 +100,7 @@ li {
     border-radius: 20px;
 }
 
-.aboutme .right {
+.right {
     width: 65%;
     padding-left: 100px;
 }
